@@ -14,7 +14,14 @@ def diskKMeans(data, k):
         for i in range(len(data)):
             cl_index = closest_cluster_index(data.iloc[i], centroids)
             clusters[cl_index] = data.iloc[i]
-        # TODO adjust centroids according to mean of clusters
+        for i in range(k):
+            centroids[i] = average_point(clusters[i], k)
+
+
+def average_point(clusters, k):
+    for i in range(k):
+        pass
+
 
 
 def closest_centroid_index(data_point, centroids):
