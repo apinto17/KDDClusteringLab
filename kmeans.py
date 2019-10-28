@@ -10,8 +10,11 @@ class KMeans:
         pass
 
 def diskKMeans(data, k):
-    centroids = selectInitialCentroids(data, k)
     attr_dict = get_attr_dict(data)
+# TODO re-organize so that is works with initial conditions
+    data = data.iloc[:, :-1]
+    centroids = selectInitialCentroids(data, k)
+    clusters = [[] for i in range(k)]
     while(not done(centroids, clusters)):
             # each index in clusters represents the number of its centroid
             # so clusters[i] contains all the points that are attatched to the ith centroid
@@ -80,7 +83,7 @@ def closest_cluster_index(data_point, centroids):
 def get_dist(test_point, train_point):
     distance = 0
     euc_distance = 0
-    for i in range(len(train_point) - 1):
+    for i in range(len(train_point)):
         if(type(train_point[i]) is str):
             if(test_point[i] != train_point[i]):
                 distance += 1
