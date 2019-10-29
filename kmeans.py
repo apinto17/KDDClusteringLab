@@ -10,7 +10,6 @@ class KMeans:
         pass
 
 def diskKMeans(data, k):
-    attr_dict = get_attr_dict(data)
     data = data.iloc[:, :-1]
     centroids = selectInitialCentroids(data, k)
     clusters = [[] for i in range(k)]
@@ -21,7 +20,7 @@ def diskKMeans(data, k):
     while(not done(centroids, clusters)):
         # compute new centroids
         for i in range(k):
-            centroids[i] = average_point(clusters[i], attr_dict)
+            centroids[i] = average_point(clusters[i])
         clusters = [[] for i in range(k)]
         # arrange all the points into clusters
         for i in range(len(data)):
@@ -33,38 +32,10 @@ def diskKMeans(data, k):
 
 
 
-def average_point(cluster, attr_dict):
-    average_point = []
-    for data_point in cluster:
-        for attr in data_point:
-            if(str(attr).isdigit()):
-                attr_dict[attr] += attr_dict[attr]
-            else:
-                attr_dict[attr].append(attr)
-
-    i = 0
-    for k,v in attr_dict:
-        if(type(v) == list):
-            average_point[i] = max(set(v), key=v.count)
-        else:
-            average_point[i] = v / len(cluster)
-        i += 1
+def average_point(cluster):
+    average_point = np.average([dp.to_numpy() for dp in cluster], axis=0)
 
     return pd.Series(data=average_point)
-
-
-def get_attr_dict(data):
-    attr_dict = {}
-    attrs = list(data.columns[:-1])
-
-    for attr in attrs:
-        if(str(attr).isdigit()):
-            attr_dict[attr] = 0
-        else:
-            attr_dict[attr] = []
-
-    return attr_dict
-
 
 
 def closest_cluster_index(data_point, centroids):
