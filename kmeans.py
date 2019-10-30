@@ -33,7 +33,7 @@ class KMeans:
         
         self.prev_len = [0] * k
         while(not self.done(clusters, centroids)):
-            self.prev_centroids = centroids
+            self.prev_centroids = centroids.copy()
             self.update_cluster_lengths(clusters)
             for i in range(k):
                 centroids[i] = self.average_point(clusters[i])
@@ -49,8 +49,9 @@ class KMeans:
 
     def average_point(self, cluster):
         average_point = np.average([dp.to_numpy() for dp in cluster], axis=0)
+        x = pd.Series(data=average_point)
 
-        return pd.Series(data=average_point)
+        return x
 
 
     def closest_cluster_index(self, data_point, centroids):
@@ -86,7 +87,7 @@ class KMeans:
         x = np.sqrt(np.sum(np.power(p1-p2, 2), axis=1))
         return x
     def calc_distance_single(self, p1, p2):
-        x = np.sqrt(np.sum(np.power(p1-p2, 2)))
+        x = np.sqrt(np.sum(np.power(p1.values-p2.values, 2)))
         return x
 
     # stoppage condition 3
@@ -98,7 +99,9 @@ class KMeans:
         for i, c in enumerate(clusters):
             for p in c:
                 sse += self.calc_distance_single(p, centroids[i])
-        return abs(sse - self.prev_sse) < threshhold
+        done =  abs(sse - self.prev_sse) < threshhold
+        self.prev_sse = sse
+        return done
 
     # stoppage condition 2
     # prototype

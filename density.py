@@ -31,11 +31,6 @@ class Density:
             for m, p2 in enumerate(points):
                 mx[k,m] = self.dist_calc.calc_distance(p1,p2)
         return mx
-                
-
-
-
-
 
 def main():
     filename = None
