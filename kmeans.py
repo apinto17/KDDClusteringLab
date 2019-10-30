@@ -10,8 +10,6 @@ class KMeans:
         pass
 
     def diskKMeans(self, data, k):
-        attr_dict = self.get_attr_dict(data)
-    # TODO re-organize so that is works with initial conditions
         data = data.iloc[:, :-1]
         centroids = self.selectInitialCentroids(data, k)
         clusters = [[] for i in range(k)]
@@ -20,11 +18,8 @@ class KMeans:
             clusters[cl_index].append(data.iloc[i])
         while(not self.done(centroids, clusters)):
             self.prev_centroids = centroids
-                # each index in clusters represents the number of its centroid
-                # so clusters[i] contains all the points that are attatched to the ith centroid
-            # arrange all the points into clusters
             for i in range(k):
-                centroids[i] = self.average_point(clusters[i], attr_dict)
+                centroids[i] = self.average_point(clusters[i])
 
             clusters = [[] for i in range(k)]
             for i in range(len(data)):
