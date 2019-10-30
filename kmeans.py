@@ -18,6 +18,9 @@ class KMeans:
             self.prev_centroids[i] = c.copy(deep=True)
             self.prev_centroids[i].values[:] = 0
 
+    def update_cluster_lengths(self, clusters):
+        for i in range(len(clusters)):
+            self.prev_len[i] = len(clusters[i])
 
     def diskKMeans(self, data, k):
         data = data.iloc[:, :-1]
@@ -31,6 +34,7 @@ class KMeans:
         self.prev_len = [0] * k
         while(not self.done(clusters, centroids)):
             self.prev_centroids = centroids
+            self.update_cluster_lengths(clusters)
             for i in range(k):
                 centroids[i] = self.average_point(clusters[i])
 
