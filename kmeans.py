@@ -6,17 +6,30 @@ import math
 
 
 class KMeans:
-    def __init__ (self):
-        pass
+    def __init__ (self, cluster_th, centroid_th, sse_th):
+        self.cluster_th = cluster_th
+        self.centroid_th = centroid_th
+        self.sse_th = sse_th
+        self.prev_sse = 0
+
+    def init_centroids(self, centroids):
+        self.prev_centroids = [None] * len(centroids)
+        for i, c in enumerate(centroids):
+            self.prev_centroids[i] = c.copy(deep=True)
+            self.prev_centroids[i].values[:] = 0
+
 
     def diskKMeans(self, data, k):
         data = data.iloc[:, :-1]
         centroids = self.selectInitialCentroids(data, k)
+        self.init_centroids(centroids)
         clusters = [[] for i in range(k)]
         for i in range(len(data)):
             cl_index = self.closest_cluster_index(data.iloc[i], centroids)
             clusters[cl_index].append(data.iloc[i])
-        while(not self.done(centroids, clusters)):
+        
+        self.prev_len = [0] * k
+        while(not self.done(clusters, centroids)):
             self.prev_centroids = centroids
             for i in range(k):
                 centroids[i] = self.average_point(clusters[i])
@@ -42,7 +55,7 @@ class KMeans:
         min_index = -1
 
         for i in range(len(centroids)):
-            dist = get_dist(data_point, centroids[i])
+            dist = self.get_dist(data_point, centroids[i])
             if(dist < min_dist):
                 min_dist = dist
                 min_centroid = centroids[i]
@@ -68,6 +81,9 @@ class KMeans:
     def calc_distance(self, p1, p2):
         x = np.sqrt(np.sum(np.power(p1-p2, 2), axis=1))
         return x
+    def calc_distance_single(self, p1, p2):
+        x = np.sqrt(np.sum(np.power(p1-p2, 2)))
+        return x
 
     # stoppage condition 3
     # sums all point distances to their respective centroid
@@ -77,28 +93,28 @@ class KMeans:
         sse = 0
         for i, c in enumerate(clusters):
             for p in c:
-                sse += calc_distance(p, centroids[i])
+                sse += self.calc_distance_single(p, centroids[i])
         return abs(sse - self.prev_sse) < threshhold
 
     # stoppage condition 2
     # prototype
     def centroids_changed(self, centroids, threshold):
-        changed = False
         for i,c in enumerate(centroids):
             if abs(np.sum(c) - np.sum(self.prev_centroids[i])) > threshold:
-                changed = True
-        return changed
+                return False
+        return True
     # stoppage condition 1
     # protoype
     def check_reasignments(self, clusters, threshold):
-        changed = False
         for i, cl in enumerate(clusters):
             if abs(len(cl) - self.prev_len[i]) > threshold:
-                changed = True
-        return changed
+                return False
+        return True
 
-    def done(self, clusters, centroids, centroid_th, cluster_th, sse_th):
-        return self.check_reasignments(clusters, cluster_th) or self.centroids_changed(centroids, centroid_th) or stoppage_sse(clusters, centroids, sse_th)
+    def done(self, clusters, centroids):
+        return self.check_reasignments(clusters, self.cluster_th) \
+            or self.centroids_changed(centroids, self.centroid_th) \
+            or self.stoppage_sse(clusters, centroids, self.sse_th)
 
     #find the centroid of the complete dataset
     def find_dataset_centroid(self, data):
@@ -131,7 +147,7 @@ def main():
         filename = sys.argv[1]
     data = pd.read_csv(filename)
 
-    kmeans = KMeans()
+    kmeans = KMeans(2, 0.2, 0.2)
     k = 3
     print(kmeans.diskKMeans(data, k))
 
