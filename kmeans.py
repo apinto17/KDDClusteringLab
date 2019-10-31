@@ -30,7 +30,7 @@ class KMeans:
         for i in range(len(data)):
             cl_index = self.closest_cluster_index(data.iloc[i], centroids)
             clusters[cl_index].append(data.iloc[i])
-        
+
         self.prev_len = [0] * k
         while(not self.done(clusters, centroids)):
             self.prev_centroids = centroids
@@ -150,6 +150,8 @@ def main():
     else:
         filename = sys.argv[1]
     data = pd.read_csv(filename)
+
+    cluster = [data.iloc[0], data.iloc[1], data.iloc[2]]
 
     kmeans = KMeans(2, 0.2, 0.2)
     k = 3
