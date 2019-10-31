@@ -3,6 +3,7 @@ import pandas as pd
 import random as rand
 import numpy as np
 import math
+import matplotlib.pyplot as plt
 
 
 class KMeans:
@@ -22,6 +23,17 @@ class KMeans:
         for i in range(len(clusters)):
             self.prev_len[i] = len(clusters[i])
 
+    #hacky plot
+    def plot_clusters(self, clusters):
+        my_color = ['b','r','g', 'y']
+        for ci, cv in enumerate(clusters):
+            for i in cv:
+                plt.scatter(i.values[0], i.values[1], color=my_color[ci])
+                print(i)
+
+        plt.show()
+
+
     def diskKMeans(self, data, k):
         data = data.iloc[:, :-1]
         centroids = self.selectInitialCentroids(data, k)
@@ -33,7 +45,7 @@ class KMeans:
 
         self.prev_len = [0] * k
         while(not self.done(clusters, centroids)):
-            self.prev_centroids = centroids
+            self.prev_centroids = centroids.copy()
             self.update_cluster_lengths(clusters)
             for i in range(k):
                 centroids[i] = self.average_point(clusters[i])
@@ -45,12 +57,18 @@ class KMeans:
 
             print(centroids)
 
+        # comment out if no plot wanted
+        self.plot_clusters(clusters)
+
+
+
 
 
     def average_point(self, cluster):
         average_point = np.average([dp.to_numpy() for dp in cluster], axis=0)
+        x = pd.Series(data=average_point)
 
-        return pd.Series(data=average_point)
+        return x
 
 
     def closest_cluster_index(self, data_point, centroids):
@@ -86,7 +104,7 @@ class KMeans:
         x = np.sqrt(np.sum(np.power(p1-p2, 2), axis=1))
         return x
     def calc_distance_single(self, p1, p2):
-        x = np.sqrt(np.sum(np.power(p1-p2, 2)))
+        x = np.sqrt(np.sum(np.power(p1.values-p2.values, 2)))
         return x
 
     # stoppage condition 3
@@ -98,7 +116,9 @@ class KMeans:
         for i, c in enumerate(clusters):
             for p in c:
                 sse += self.calc_distance_single(p, centroids[i])
-        return abs(sse - self.prev_sse) < threshhold
+        done =  abs(sse - self.prev_sse) < threshhold
+        self.prev_sse = sse
+        return done
 
     # stoppage condition 2
     # prototype
@@ -151,10 +171,11 @@ def main():
         filename = sys.argv[1]
     data = pd.read_csv(filename)
 
-    cluster = [data.iloc[0], data.iloc[1], data.iloc[2]]
+    # comment out if you don't want 2d data
+    data = pd.DataFrame(np.random.randint(0,100,size=(100, 3)))
 
     kmeans = KMeans(2, 0.2, 0.2)
-    k = 3
+    k = 4
     print(kmeans.diskKMeans(data, k))
 
 if(__name__ == "__main__"):
