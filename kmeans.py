@@ -3,6 +3,7 @@ import pandas as pd
 import random as rand
 import numpy as np
 import math
+import matplotlib.pyplot as plt
 
 
 class KMeans:
@@ -21,6 +22,17 @@ class KMeans:
     def update_cluster_lengths(self, clusters):
         for i in range(len(clusters)):
             self.prev_len[i] = len(clusters[i])
+    
+    #hacky plot
+    def plot_clusters(self, clusters):
+        my_color = ['b','r','g', 'y']
+        for ci, cv in enumerate(clusters):
+            for i in cv:
+                plt.scatter(i.values[0], i.values[1], color=my_color[ci])
+                print(i)
+        
+        plt.show()
+
 
     def diskKMeans(self, data, k):
         data = data.iloc[:, :-1]
@@ -44,6 +56,11 @@ class KMeans:
                 clusters[cl_index].append(data.iloc[i])
 
             print(centroids)
+        
+        # comment out if no plot wanted
+        self.plot_clusters(clusters)
+        
+
 
 
 
@@ -154,8 +171,11 @@ def main():
         filename = sys.argv[1]
     data = pd.read_csv(filename)
 
+    # comment out if you don't want 2d data
+    data = pd.DataFrame(np.random.randint(0,100,size=(100, 3)))
+
     kmeans = KMeans(2, 0.2, 0.2)
-    k = 3
+    k = 4
     print(kmeans.diskKMeans(data, k))
 
 if(__name__ == "__main__"):
