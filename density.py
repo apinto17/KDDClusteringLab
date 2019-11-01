@@ -2,36 +2,23 @@ import sys
 import pandas as pd
 import random as rand
 import numpy as np
-from abc import ABC, abstractmethod
 import matplotlib.pyplot as plt
 import matplotlib.cm as cm
 from scipy.spatial.distance import cdist
 from sklearn import datasets
 
-class Distance(ABC):
-    @abstractmethod
-    def calc_distance(self, p1, p2):
-        pass
-
-class Euklidean_Distance(Distance):
-    def calc_distance(self, p1, p2):
-        x = np.sqrt(np.sum(np.power(p1-p2, 2)))
-        return x
-
-
 class Density:
-    def __init__(self, eps, minPts, distance_method):
+    # eps = epsilon/radios 
+    def __init__(self, eps, minPts):
         self.eps = eps
         self.minPts = minPts
-        self.dist_calc = distance_method
     
-    def calc_clusters(self, data):
+    def calc_clusters(self, data, dist_method):
         m = len(data)
-#        labels = np.zeros(m)
         point_type = np.zeros(m).astype(int)
 
 #        dist_mx = self.calc_distance_matrix(data.values)
-        dist_mx = cdist(data, data, 'euclidean')
+        dist_mx = cdist(data, data, dist_method)
         C = 0
         for i in range(m):
             if point_type[i] != 0:
@@ -57,12 +44,12 @@ class Density:
         return point_type
 
 
-    def calc_distance_matrix(self, points):
-        mx = np.zeros((len(points), len(points))).astype(float)
-        for k, p1 in enumerate(points):
-            for m, p2 in enumerate(points):
-                mx[k,m] = self.dist_calc.calc_distance(p1,p2)
-        return mx
+#    def calc_distance_matrix(self, points):
+#        mx = np.zeros((len(points), len(points))).astype(float)
+#        for k, p1 in enumerate(points):
+#            for m, p2 in enumerate(points):
+#                mx[k,m] = self.dist_calc.calc_distance(p1,p2)
+#        return mx
     
     def plot_points(self, points, types):
         unique = np.unique(types)
@@ -94,14 +81,11 @@ def main():
     blobs = datasets.make_blobs(centers=5, n_samples=1500, random_state=8)
     data = pd.DataFrame(blobs[0])
 
-    circles = datasets.make_circles(n_samples=1000, factor=.5, noise=.05)
-    data = pd.DataFrame(circles[0])
+#    circles = datasets.make_circles(n_samples=1000, factor=.5, noise=.05)
+#    data = pd.DataFrame(circles[0])
     #--------------------------------------------------
-
-    dc = Euklidean_Distance()
-
-    density = Density(0.2,4, dc)
-    point_types = density.calc_clusters(data)
+    density = Density(1,5)
+    point_types = density.calc_clusters(data, 'euclidean')
 
     density.plot_points(data,point_types)
 
