@@ -4,10 +4,12 @@ import random as rand
 import numpy as np
 import math
 import matplotlib.pyplot as plt
-
+from sklearn.decomposition import PCA
+from sklearn.preprocessing import StandardScaler
+import matplotlib.cm as cm
 
 class KMeans:
-    def __init__ (self, cluster_th, centroid_th, sse_th):
+    def __init__ (self, cluster_th=2, centroid_th=0.2, sse_th=0.2):
         self.cluster_th = cluster_th
         self.centroid_th = centroid_th
         self.sse_th = sse_th
@@ -24,17 +26,39 @@ class KMeans:
             self.prev_len[i] = len(clusters[i])
 
     #hacky plot
-    def plot_clusters(self, clusters):
+    def plot_clusters(self, clusters, centroids):
+        pca = PCA(n_components=2) #2-dimensional PCA
         my_color = ['b','r','g', 'y']
         for ci, cv in enumerate(clusters):
             for i in cv:
                 plt.scatter(i.values[0], i.values[1], color=my_color[ci])
+            plt.scatter(centroids[ci][0], centroids[ci][1], color=my_color[ci], s=3)
+        plt.show()
 
+    def plot_pca(self, clusters, centroids):
+        pca = PCA(n_components=2) #2-dimensional PCA
+        colors = cm.rainbow(np.linspace(0,1, len(clusters)))
+#        colors = ['r', 'g', 'b']
+        data = pd.DataFrame(clusters[0])
+        data['cluster'] = np.zeros(len(clusters[0]))
+        for c in range(1,len(clusters)):
+            cluster_data = np.ones(len(clusters[c])) * c
+            new_data = pd.DataFrame(clusters[c])
+            new_data['cluster'] = cluster_data
+            new_cols = {x: y for x, y in zip(data.columns, new_data.columns)}
+            data = data.append(new_data.rename(columns=new_cols))
+
+        x = data['cluster'].values.astype(int)
+        data = data.drop('cluster', axis=1)
+        data = StandardScaler().fit_transform(data)
+        transformed = pd.DataFrame(pca.fit_transform(data), columns=['y', 'y2'])
+        for ci, cv in enumerate(transformed.values):
+            plt.scatter(cv[0], cv[1], color=colors[x[ci]])
         plt.show()
 
 
+
     def diskKMeans(self, data, k):
-        data = data.iloc[:, :-1]
         centroids = self.selectInitialCentroids(data, k)
         self.init_centroids(centroids)
         clusters = [[] for i in range(k)]
@@ -54,10 +78,27 @@ class KMeans:
                 cl_index = self.closest_cluster_index(data.iloc[i], centroids)
                 clusters[cl_index].append(data.iloc[i])
 
-            print(centroids)
+        self.clusters = clusters
+        self.centroids = centroids
+        return clusters, centroids
+        
 
-        # comment out if no plot wanted
-        self.plot_clusters(clusters)
+    def output_data(self):
+        for i in range(len(self.clusters)):
+            print("Cluster: "+str(i))
+            print("Centroids: ", end='')
+            print(self.centroids[i].values)
+            cluster_points = pd.DataFrame(self.clusters[i])
+            dist_vec = self.calc_distance(cluster_points, self.centroids[i])
+
+            print("Max Dist. to Center: %f" % (np.max(dist_vec)))
+            print("Min Dist. to Center: %f" % (np.min(dist_vec)))
+            print("Avg Dist. to Center: %f" % (np.average(dist_vec)))
+            print("%d Points:" % (len(self.clusters[i])))
+            for p in cluster_points.values:
+                print(np.array2string(p, precision=2, separator=','))
+            print("End cluster %d" % i)
+
 
 
 
@@ -81,7 +122,6 @@ class KMeans:
                 min_dist = dist
                 min_centroid = centroids[i]
                 min_index = i
-
         return min_index
 
 
@@ -149,12 +189,12 @@ class KMeans:
         centroids = []
         centroid = self.find_dataset_centroid(data)
         centroid_distances = self.calc_distance(data, centroid)
-        index_centroid = np.argmax(centroid_distances)
+        index_centroid = np.argmax(np.array(centroid_distances.values))
         centroid = data.iloc[index_centroid]
         centroids.append(centroid)
         distances = self.calc_distance(data, centroid)
         for i in range(1,k):
-            index_centroid = np.argmax(distances)
+            index_centroid = np.argmax(np.array(distances.values))
             centroid = data.iloc[index_centroid]
             centroids.append(centroid)
             distances += self.calc_distance(data, centroid)
@@ -163,19 +203,27 @@ class KMeans:
 
 def main():
     filename = None
-    if(len(sys.argv) < 2):
-        print("Usage: python kmeans.py <filename>")
+    kmeans = None
+    if(len(sys.argv) < 3):
+        print("Usage: python kmeans.py <filename> <k> [<min_pt_reasignment> <min_centroid_change> <sse_threshold>]")
         exit()
+    elif(len(sys.argv) == 6):
+        kmeans = KMeans(int(sys.argv[3]), float(sys.argv[4]), float(sys.argv[5]))
     else:
-        filename = sys.argv[1]
+        kmeans = KMeans()
+
+    filename = sys.argv[1]
+    k = int(sys.argv[2])
     data = pd.read_csv(filename)
+    data.drop(list(data.filter(regex = '0')), axis = 1, inplace = True)
 
     # comment out if you don't want 2d data
-    data = pd.DataFrame(np.random.randint(0,100,size=(100, 3)))
+    #data = pd.DataFrame(np.random.randint(0,100,size=(100, 3)))
 
-    kmeans = KMeans(2, 0.2, 0.2)
-    k = 4
-    print(kmeans.diskKMeans(data, k))
+    clusters, centroids = kmeans.diskKMeans(data, k)
+    # comment out if no plot wanted
+    kmeans.output_data()
+    kmeans.plot_pca(clusters, centroids)
 
 if(__name__ == "__main__"):
     main()

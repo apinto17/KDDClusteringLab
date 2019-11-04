@@ -24,7 +24,7 @@ class Density:
         self.eps = eps
         self.minPts = minPts
         self.dist_calc = distance_method
-    
+
     def calc_clusters(self, data):
         m = len(data)
 #        labels = np.zeros(m)
@@ -63,7 +63,7 @@ class Density:
             for m, p2 in enumerate(points):
                 mx[k,m] = self.dist_calc.calc_distance(p1,p2)
         return mx
-    
+
     def plot_points(self, points, types):
         unique = np.unique(types)
         colors = cm.rainbow(np.linspace(0,1, len(unique)))
@@ -72,9 +72,9 @@ class Density:
                 color = 'k'
             else:
                 color = colors[types[i]-1]
-            
+
             plt.scatter(p[0], p[1], color=color)
-        
+
         plt.show()
 
 
