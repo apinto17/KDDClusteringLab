@@ -1,0 +1,2394 @@
+{
+  "type": "root",
+  "height": 3.9716042098879893,
+  "nodes": [
+    {
+      "type": "node",
+      "height": 1.2646443298939283,
+      "nodes": [
+        {
+          "type": "leaf",
+          "height": 0,
+          "data": [
+            4.5,
+            2.3,
+            1.3,
+            0.3
+          ]
+        },
+        {
+          "type": "node",
+          "height": 0.9235855153052329,
+          "nodes": [
+            {
+              "type": "node",
+              "height": 0.48218253804964845,
+              "nodes": [
+                {
+                  "type": "leaf",
+                  "height": 0,
+                  "data": [
+                    5.7,
+                    4.4,
+                    1.5,
+                    0.4
+                  ]
+                },
+                {
+                  "type": "node",
+                  "height": 0.4886716689148243,
+                  "nodes": [
+                    {
+                      "type": "leaf",
+                      "height": 0,
+                      "data": [
+                        5.8,
+                        4.0,
+                        1.2,
+                        0.2
+                      ]
+                    },
+                    {
+                      "type": "node",
+                      "height": 0.42914643965279153,
+                      "nodes": [
+                        {
+                          "type": "node",
+                          "height": 0.33166247903553986,
+                          "nodes": [
+                            {
+                              "type": "leaf",
+                              "height": 0,
+                              "data": [
+                                5.4,
+                                3.9,
+                                1.7,
+                                0.4
+                              ]
+                            },
+                            {
+                              "type": "leaf",
+                              "height": 0,
+                              "data": [
+                                5.7,
+                                3.8,
+                                1.7,
+                                0.3
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "node",
+                          "height": 0.38729833462074204,
+                          "nodes": [
+                            {
+                              "type": "leaf",
+                              "height": 0,
+                              "data": [
+                                5.4,
+                                3.9,
+                                1.3,
+                                0.4
+                              ]
+                            },
+                            {
+                              "type": "node",
+                              "height": 0.3464101615137755,
+                              "nodes": [
+                                {
+                                  "type": "leaf",
+                                  "height": 0,
+                                  "data": [
+                                    5.2,
+                                    4.1,
+                                    1.5,
+                                    0.1
+                                  ]
+                                },
+                                {
+                                  "type": "leaf",
+                                  "height": 0,
+                                  "data": [
+                                    5.5,
+                                    4.2,
+                                    1.4,
+                                    0.2
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "node",
+              "height": 0.644581127910259,
+              "nodes": [
+                {
+                  "type": "leaf",
+                  "height": 0,
+                  "data": [
+                    4.6,
+                    3.6,
+                    1.0,
+                    0.2
+                  ]
+                },
+                {
+                  "type": "node",
+                  "height": 0.603711827382519,
+                  "nodes": [
+                    {
+                      "type": "node",
+                      "height": 0.4931166824393585,
+                      "nodes": [
+                        {
+                          "type": "node",
+                          "height": 0.2748737083745108,
+                          "nodes": [
+                            {
+                              "type": "leaf",
+                              "height": 0,
+                              "data": [
+                                4.3,
+                                3.0,
+                                1.1,
+                                0.1
+                              ]
+                            },
+                            {
+                              "type": "node",
+                              "height": 0.25495097567963926,
+                              "nodes": [
+                                {
+                                  "type": "leaf",
+                                  "height": 0,
+                                  "data": [
+                                    4.4,
+                                    3.2,
+                                    1.3,
+                                    0.2
+                                  ]
+                                },
+                                {
+                                  "type": "node",
+                                  "height": 0.14142135623730948,
+                                  "nodes": [
+                                    {
+                                      "type": "leaf",
+                                      "height": 0,
+                                      "data": [
+                                        4.4,
+                                        2.9,
+                                        1.4,
+                                        0.2
+                                      ]
+                                    },
+                                    {
+                                      "type": "leaf",
+                                      "height": 0,
+                                      "data": [
+                                        4.4,
+                                        3.0,
+                                        1.3,
+                                        0.2
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "node",
+                          "height": 0.4096414559697042,
+                          "nodes": [
+                            {
+                              "type": "node",
+                              "height": 0.2999999999999998,
+                              "nodes": [
+                                {
+                                  "type": "leaf",
+                                  "height": 0,
+                                  "data": [
+                                    4.8,
+                                    3.4,
+                                    1.6,
+                                    0.2
+                                  ]
+                                },
+                                {
+                                  "type": "leaf",
+                                  "height": 0,
+                                  "data": [
+                                    4.8,
+                                    3.4,
+                                    1.9,
+                                    0.2
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "node",
+                              "height": 0.3553479834600339,
+                              "nodes": [
+                                {
+                                  "type": "leaf",
+                                  "height": 0,
+                                  "data": [
+                                    5.0,
+                                    3.2,
+                                    1.2,
+                                    0.2
+                                  ]
+                                },
+                                {
+                                  "type": "node",
+                                  "height": 0.30270131552365753,
+                                  "nodes": [
+                                    {
+                                      "type": "node",
+                                      "height": 0.21969366427470982,
+                                      "nodes": [
+                                        {
+                                          "type": "node",
+                                          "height": 0.1414213562373093,
+                                          "nodes": [
+                                            {
+                                              "type": "leaf",
+                                              "height": 0,
+                                              "data": [
+                                                4.7,
+                                                3.2,
+                                                1.6,
+                                                0.2
+                                              ]
+                                            },
+                                            {
+                                              "type": "leaf",
+                                              "height": 0,
+                                              "data": [
+                                                4.8,
+                                                3.1,
+                                                1.6,
+                                                0.2
+                                              ]
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "type": "node",
+                                          "height": 0.21278575558006216,
+                                          "nodes": [
+                                            {
+                                              "type": "leaf",
+                                              "height": 0,
+                                              "data": [
+                                                5.0,
+                                                3.0,
+                                                1.6,
+                                                0.2
+                                              ]
+                                            },
+                                            {
+                                              "type": "node",
+                                              "height": 0.11135528725660082,
+                                              "nodes": [
+                                                {
+                                                  "type": "leaf",
+                                                  "height": 0,
+                                                  "data": [
+                                                    4.9,
+                                                    3.1,
+                                                    1.5,
+                                                    0.1
+                                                  ]
+                                                },
+                                                {
+                                                  "type": "node",
+                                                  "height": 0.13919410907075097,
+                                                  "nodes": [
+                                                    {
+                                                      "type": "leaf",
+                                                      "height": 0,
+                                                      "data": [
+                                                        4.9,
+                                                        3.1,
+                                                        1.5,
+                                                        0.1
+                                                      ]
+                                                    },
+                                                    {
+                                                      "type": "node",
+                                                      "height": 0.18559214542766783,
+                                                      "nodes": [
+                                                        {
+                                                          "type": "leaf",
+                                                          "height": 0,
+                                                          "data": [
+                                                            4.9,
+                                                            3.1,
+                                                            1.5,
+                                                            0.1
+                                                          ]
+                                                        },
+                                                        {
+                                                          "type": "node",
+                                                          "height": 0.15811388300841892,
+                                                          "nodes": [
+                                                            {
+                                                              "type": "leaf",
+                                                              "height": 0,
+                                                              "data": [
+                                                                4.8,
+                                                                3.0,
+                                                                1.4,
+                                                                0.1
+                                                              ]
+                                                            },
+                                                            {
+                                                              "type": "node",
+                                                              "height": 0.14142135623730986,
+                                                              "nodes": [
+                                                                {
+                                                                  "type": "leaf",
+                                                                  "height": 0,
+                                                                  "data": [
+                                                                    4.9,
+                                                                    3.0,
+                                                                    1.4,
+                                                                    0.2
+                                                                  ]
+                                                                },
+                                                                {
+                                                                  "type": "leaf",
+                                                                  "height": 0,
+                                                                  "data": [
+                                                                    4.8,
+                                                                    3.0,
+                                                                    1.4,
+                                                                    0.3
+                                                                  ]
+                                                                }
+                                                              ]
+                                                            }
+                                                          ]
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "node",
+                                      "height": 0.2560381915956203,
+                                      "nodes": [
+                                        {
+                                          "type": "leaf",
+                                          "height": 0,
+                                          "data": [
+                                            4.6,
+                                            3.4,
+                                            1.4,
+                                            0.3
+                                          ]
+                                        },
+                                        {
+                                          "type": "node",
+                                          "height": 0.18708286933869722,
+                                          "nodes": [
+                                            {
+                                              "type": "leaf",
+                                              "height": 0,
+                                              "data": [
+                                                4.7,
+                                                3.2,
+                                                1.3,
+                                                0.2
+                                              ]
+                                            },
+                                            {
+                                              "type": "node",
+                                              "height": 0.14142135623730964,
+                                              "nodes": [
+                                                {
+                                                  "type": "leaf",
+                                                  "height": 0,
+                                                  "data": [
+                                                    4.6,
+                                                    3.1,
+                                                    1.5,
+                                                    0.2
+                                                  ]
+                                                },
+                                                {
+                                                  "type": "leaf",
+                                                  "height": 0,
+                                                  "data": [
+                                                    4.6,
+                                                    3.2,
+                                                    1.4,
+                                                    0.2
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "node",
+                      "height": 0.5164784603446694,
+                      "nodes": [
+                        {
+                          "type": "leaf",
+                          "height": 0,
+                          "data": [
+                            5.1,
+                            3.8,
+                            1.9,
+                            0.4
+                          ]
+                        },
+                        {
+                          "type": "node",
+                          "height": 0.36635721449436787,
+                          "nodes": [
+                            {
+                              "type": "node",
+                              "height": 0.2236067977499791,
+                              "nodes": [
+                                {
+                                  "type": "leaf",
+                                  "height": 0,
+                                  "data": [
+                                    5.0,
+                                    3.5,
+                                    1.6,
+                                    0.6
+                                  ]
+                                },
+                                {
+                                  "type": "node",
+                                  "height": 0.1999999999999998,
+                                  "nodes": [
+                                    {
+                                      "type": "leaf",
+                                      "height": 0,
+                                      "data": [
+                                        5.1,
+                                        3.3,
+                                        1.7,
+                                        0.5
+                                      ]
+                                    },
+                                    {
+                                      "type": "leaf",
+                                      "height": 0,
+                                      "data": [
+                                        5.0,
+                                        3.4,
+                                        1.6,
+                                        0.4
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "node",
+                              "height": 0.33971777001697356,
+                              "nodes": [
+                                {
+                                  "type": "node",
+                                  "height": 0.32685557651849,
+                                  "nodes": [
+                                    {
+                                      "type": "node",
+                                      "height": 0.19882467150733585,
+                                      "nodes": [
+                                        {
+                                          "type": "leaf",
+                                          "height": 0,
+                                          "data": [
+                                            5.0,
+                                            3.3,
+                                            1.4,
+                                            0.2
+                                          ]
+                                        },
+                                        {
+                                          "type": "node",
+                                          "height": 0.18633899812498275,
+                                          "nodes": [
+                                            {
+                                              "type": "node",
+                                              "height": 0.14790199457749093,
+                                              "nodes": [
+                                                {
+                                                  "type": "node",
+                                                  "height": 0.09999999999999964,
+                                                  "nodes": [
+                                                    {
+                                                      "type": "leaf",
+                                                      "height": 0,
+                                                      "data": [
+                                                        5.0,
+                                                        3.4,
+                                                        1.5,
+                                                        0.2
+                                                      ]
+                                                    },
+                                                    {
+                                                      "type": "leaf",
+                                                      "height": 0,
+                                                      "data": [
+                                                        5.1,
+                                                        3.4,
+                                                        1.5,
+                                                        0.2
+                                                      ]
+                                                    }
+                                                  ]
+                                                },
+                                                {
+                                                  "type": "node",
+                                                  "height": 0.13228756555322987,
+                                                  "nodes": [
+                                                    {
+                                                      "type": "node",
+                                                      "height": 0.09999999999999998,
+                                                      "nodes": [
+                                                        {
+                                                          "type": "leaf",
+                                                          "height": 0,
+                                                          "data": [
+                                                            5.1,
+                                                            3.5,
+                                                            1.4,
+                                                            0.2
+                                                          ]
+                                                        },
+                                                        {
+                                                          "type": "leaf",
+                                                          "height": 0,
+                                                          "data": [
+                                                            5.1,
+                                                            3.5,
+                                                            1.4,
+                                                            0.3
+                                                          ]
+                                                        }
+                                                      ]
+                                                    },
+                                                    {
+                                                      "type": "node",
+                                                      "height": 0.14142135623730964,
+                                                      "nodes": [
+                                                        {
+                                                          "type": "leaf",
+                                                          "height": 0,
+                                                          "data": [
+                                                            5.2,
+                                                            3.5,
+                                                            1.5,
+                                                            0.2
+                                                          ]
+                                                        },
+                                                        {
+                                                          "type": "leaf",
+                                                          "height": 0,
+                                                          "data": [
+                                                            5.2,
+                                                            3.4,
+                                                            1.4,
+                                                            0.2
+                                                          ]
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            },
+                                            {
+                                              "type": "node",
+                                              "height": 0.17320508075688767,
+                                              "nodes": [
+                                                {
+                                                  "type": "leaf",
+                                                  "height": 0,
+                                                  "data": [
+                                                    5.0,
+                                                    3.6,
+                                                    1.4,
+                                                    0.2
+                                                  ]
+                                                },
+                                                {
+                                                  "type": "leaf",
+                                                  "height": 0,
+                                                  "data": [
+                                                    5.0,
+                                                    3.5,
+                                                    1.3,
+                                                    0.3
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "node",
+                                      "height": 0.2793842435706702,
+                                      "nodes": [
+                                        {
+                                          "type": "node",
+                                          "height": 0.10000000000000053,
+                                          "nodes": [
+                                            {
+                                              "type": "leaf",
+                                              "height": 0,
+                                              "data": [
+                                                5.4,
+                                                3.7,
+                                                1.5,
+                                                0.2
+                                              ]
+                                            },
+                                            {
+                                              "type": "leaf",
+                                              "height": 0,
+                                              "data": [
+                                                5.3,
+                                                3.7,
+                                                1.5,
+                                                0.2
+                                              ]
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "type": "node",
+                                          "height": 0.18708286933869703,
+                                          "nodes": [
+                                            {
+                                              "type": "leaf",
+                                              "height": 0,
+                                              "data": [
+                                                5.1,
+                                                3.8,
+                                                1.6,
+                                                0.2
+                                              ]
+                                            },
+                                            {
+                                              "type": "node",
+                                              "height": 0.14142135623730928,
+                                              "nodes": [
+                                                {
+                                                  "type": "leaf",
+                                                  "height": 0,
+                                                  "data": [
+                                                    5.1,
+                                                    3.8,
+                                                    1.5,
+                                                    0.3
+                                                  ]
+                                                },
+                                                {
+                                                  "type": "leaf",
+                                                  "height": 0,
+                                                  "data": [
+                                                    5.1,
+                                                    3.7,
+                                                    1.5,
+                                                    0.4
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "node",
+                                  "height": 0.3464101615137754,
+                                  "nodes": [
+                                    {
+                                      "type": "leaf",
+                                      "height": 0,
+                                      "data": [
+                                        5.5,
+                                        3.5,
+                                        1.3,
+                                        0.2
+                                      ]
+                                    },
+                                    {
+                                      "type": "node",
+                                      "height": 0.282842712474619,
+                                      "nodes": [
+                                        {
+                                          "type": "leaf",
+                                          "height": 0,
+                                          "data": [
+                                            5.4,
+                                            3.4,
+                                            1.7,
+                                            0.2
+                                          ]
+                                        },
+                                        {
+                                          "type": "leaf",
+                                          "height": 0,
+                                          "data": [
+                                            5.4,
+                                            3.4,
+                                            1.5,
+                                            0.4
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "node",
+      "height": 1.8102431471313776,
+      "nodes": [
+        {
+          "type": "node",
+          "height": 1.2148816814817816,
+          "nodes": [
+            {
+              "type": "node",
+              "height": 0.8239945037127127,
+              "nodes": [
+                {
+                  "type": "node",
+                  "height": 0.7053247430774566,
+                  "nodes": [
+                    {
+                      "type": "leaf",
+                      "height": 0,
+                      "data": [
+                        6.3,
+                        3.3,
+                        6.0,
+                        2.5
+                      ]
+                    },
+                    {
+                      "type": "node",
+                      "height": 0.47881025392033943,
+                      "nodes": [
+                        {
+                          "type": "node",
+                          "height": 0.3240370349203931,
+                          "nodes": [
+                            {
+                              "type": "leaf",
+                              "height": 0,
+                              "data": [
+                                6.4,
+                                3.2,
+                                5.3,
+                                2.3
+                              ]
+                            },
+                            {
+                              "type": "node",
+                              "height": 0.2449489742783171,
+                              "nodes": [
+                                {
+                                  "type": "leaf",
+                                  "height": 0,
+                                  "data": [
+                                    6.3,
+                                    3.4,
+                                    5.6,
+                                    2.4
+                                  ]
+                                },
+                                {
+                                  "type": "leaf",
+                                  "height": 0,
+                                  "data": [
+                                    6.2,
+                                    3.4,
+                                    5.4,
+                                    2.3
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "node",
+                          "height": 0.519006789297866,
+                          "nodes": [
+                            {
+                              "type": "node",
+                              "height": 0.30310889132455343,
+                              "nodes": [
+                                {
+                                  "type": "leaf",
+                                  "height": 0,
+                                  "data": [
+                                    6.7,
+                                    3.3,
+                                    5.7,
+                                    2.1
+                                  ]
+                                },
+                                {
+                                  "type": "node",
+                                  "height": 0.2598076211353317,
+                                  "nodes": [
+                                    {
+                                      "type": "node",
+                                      "height": 0.22360679774997935,
+                                      "nodes": [
+                                        {
+                                          "type": "leaf",
+                                          "height": 0,
+                                          "data": [
+                                            6.9,
+                                            3.2,
+                                            5.7,
+                                            2.3
+                                          ]
+                                        },
+                                        {
+                                          "type": "leaf",
+                                          "height": 0,
+                                          "data": [
+                                            6.8,
+                                            3.2,
+                                            5.9,
+                                            2.3
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "node",
+                                      "height": 0.24494897427831785,
+                                      "nodes": [
+                                        {
+                                          "type": "leaf",
+                                          "height": 0,
+                                          "data": [
+                                            6.7,
+                                            3.1,
+                                            5.6,
+                                            2.4
+                                          ]
+                                        },
+                                        {
+                                          "type": "leaf",
+                                          "height": 0,
+                                          "data": [
+                                            6.7,
+                                            3.3,
+                                            5.7,
+                                            2.5
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "node",
+                              "height": 0.4896548833228404,
+                              "nodes": [
+                                {
+                                  "type": "node",
+                                  "height": 0.39747466725706065,
+                                  "nodes": [
+                                    {
+                                      "type": "node",
+                                      "height": 0.3041381265149111,
+                                      "nodes": [
+                                        {
+                                          "type": "leaf",
+                                          "height": 0,
+                                          "data": [
+                                            6.5,
+                                            3.0,
+                                            5.8,
+                                            2.2
+                                          ]
+                                        },
+                                        {
+                                          "type": "node",
+                                          "height": 0.10000000000000009,
+                                          "nodes": [
+                                            {
+                                              "type": "leaf",
+                                              "height": 0,
+                                              "data": [
+                                                6.4,
+                                                2.8,
+                                                5.6,
+                                                2.1
+                                              ]
+                                            },
+                                            {
+                                              "type": "leaf",
+                                              "height": 0,
+                                              "data": [
+                                                6.4,
+                                                2.8,
+                                                5.6,
+                                                2.2
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "node",
+                                      "height": 0.39299420408505364,
+                                      "nodes": [
+                                        {
+                                          "type": "leaf",
+                                          "height": 0,
+                                          "data": [
+                                            6.4,
+                                            2.7,
+                                            5.3,
+                                            1.9
+                                          ]
+                                        },
+                                        {
+                                          "type": "node",
+                                          "height": 0.2345207879911715,
+                                          "nodes": [
+                                            {
+                                              "type": "leaf",
+                                              "height": 0,
+                                              "data": [
+                                                6.3,
+                                                2.9,
+                                                5.6,
+                                                1.8
+                                              ]
+                                            },
+                                            {
+                                              "type": "node",
+                                              "height": 0.1414213562373093,
+                                              "nodes": [
+                                                {
+                                                  "type": "leaf",
+                                                  "height": 0,
+                                                  "data": [
+                                                    6.5,
+                                                    3.0,
+                                                    5.5,
+                                                    1.8
+                                                  ]
+                                                },
+                                                {
+                                                  "type": "leaf",
+                                                  "height": 0,
+                                                  "data": [
+                                                    6.4,
+                                                    3.1,
+                                                    5.5,
+                                                    1.8
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "node",
+                                  "height": 0.41306779104645786,
+                                  "nodes": [
+                                    {
+                                      "type": "node",
+                                      "height": 0.22360679774997935,
+                                      "nodes": [
+                                        {
+                                          "type": "leaf",
+                                          "height": 0,
+                                          "data": [
+                                            6.5,
+                                            3.2,
+                                            5.1,
+                                            2.0
+                                          ]
+                                        },
+                                        {
+                                          "type": "leaf",
+                                          "height": 0,
+                                          "data": [
+                                            6.5,
+                                            3.0,
+                                            5.2,
+                                            2.0
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "node",
+                                      "height": 0.36400549446402547,
+                                      "nodes": [
+                                        {
+                                          "type": "node",
+                                          "height": 0.17320508075688787,
+                                          "nodes": [
+                                            {
+                                              "type": "leaf",
+                                              "height": 0,
+                                              "data": [
+                                                6.8,
+                                                3.0,
+                                                5.5,
+                                                2.1
+                                              ]
+                                            },
+                                            {
+                                              "type": "leaf",
+                                              "height": 0,
+                                              "data": [
+                                                6.9,
+                                                3.1,
+                                                5.4,
+                                                2.1
+                                              ]
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "type": "node",
+                                          "height": 0.24494897427831822,
+                                          "nodes": [
+                                            {
+                                              "type": "leaf",
+                                              "height": 0,
+                                              "data": [
+                                                6.9,
+                                                3.1,
+                                                5.1,
+                                                2.3
+                                              ]
+                                            },
+                                            {
+                                              "type": "leaf",
+                                              "height": 0,
+                                              "data": [
+                                                6.7,
+                                                3.0,
+                                                5.2,
+                                                2.3
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "node",
+                  "height": 0.7549834435270755,
+                  "nodes": [
+                    {
+                      "type": "leaf",
+                      "height": 0,
+                      "data": [
+                        6.7,
+                        2.5,
+                        5.8,
+                        1.8
+                      ]
+                    },
+                    {
+                      "type": "leaf",
+                      "height": 0,
+                      "data": [
+                        6.1,
+                        2.6,
+                        5.6,
+                        1.4
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "node",
+              "height": 0.873618839393479,
+              "nodes": [
+                {
+                  "type": "node",
+                  "height": 0.8324995829161453,
+                  "nodes": [
+                    {
+                      "type": "node",
+                      "height": 0.4663689526544406,
+                      "nodes": [
+                        {
+                          "type": "leaf",
+                          "height": 0,
+                          "data": [
+                            7.7,
+                            2.6,
+                            6.9,
+                            2.3
+                          ]
+                        },
+                        {
+                          "type": "node",
+                          "height": 0.26457513110645964,
+                          "nodes": [
+                            {
+                              "type": "leaf",
+                              "height": 0,
+                              "data": [
+                                7.6,
+                                3.0,
+                                6.6,
+                                2.1
+                              ]
+                            },
+                            {
+                              "type": "leaf",
+                              "height": 0,
+                              "data": [
+                                7.7,
+                                2.8,
+                                6.7,
+                                2.0
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "node",
+                      "height": 0.6557438524302002,
+                      "nodes": [
+                        {
+                          "type": "leaf",
+                          "height": 0,
+                          "data": [
+                            7.7,
+                            3.0,
+                            6.1,
+                            2.3
+                          ]
+                        },
+                        {
+                          "type": "node",
+                          "height": 0.41331989225457316,
+                          "nodes": [
+                            {
+                              "type": "node",
+                              "height": 0.26457513110645936,
+                              "nodes": [
+                                {
+                                  "type": "leaf",
+                                  "height": 0,
+                                  "data": [
+                                    7.3,
+                                    2.9,
+                                    6.3,
+                                    1.8
+                                  ]
+                                },
+                                {
+                                  "type": "leaf",
+                                  "height": 0,
+                                  "data": [
+                                    7.4,
+                                    2.8,
+                                    6.1,
+                                    1.9
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "node",
+                              "height": 0.42426406871192857,
+                              "nodes": [
+                                {
+                                  "type": "leaf",
+                                  "height": 0,
+                                  "data": [
+                                    7.1,
+                                    3.0,
+                                    5.9,
+                                    2.1
+                                  ]
+                                },
+                                {
+                                  "type": "node",
+                                  "height": 0.3464101615137756,
+                                  "nodes": [
+                                    {
+                                      "type": "leaf",
+                                      "height": 0,
+                                      "data": [
+                                        7.2,
+                                        3.2,
+                                        6.0,
+                                        1.8
+                                      ]
+                                    },
+                                    {
+                                      "type": "leaf",
+                                      "height": 0,
+                                      "data": [
+                                        7.2,
+                                        3.0,
+                                        5.8,
+                                        1.6
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "node",
+                  "height": 0.8732124598286499,
+                  "nodes": [
+                    {
+                      "type": "leaf",
+                      "height": 0,
+                      "data": [
+                        7.2,
+                        3.6,
+                        6.1,
+                        2.5
+                      ]
+                    },
+                    {
+                      "type": "node",
+                      "height": 0.4123105625617661,
+                      "nodes": [
+                        {
+                          "type": "leaf",
+                          "height": 0,
+                          "data": [
+                            7.7,
+                            3.8,
+                            6.7,
+                            2.2
+                          ]
+                        },
+                        {
+                          "type": "leaf",
+                          "height": 0,
+                          "data": [
+                            7.9,
+                            3.8,
+                            6.4,
+                            2.0
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "node",
+          "height": 1.6985516706234678,
+          "nodes": [
+            {
+              "type": "node",
+              "height": 0.5011098792790971,
+              "nodes": [
+                {
+                  "type": "leaf",
+                  "height": 0,
+                  "data": [
+                    5.0,
+                    2.0,
+                    3.5,
+                    1.0
+                  ]
+                },
+                {
+                  "type": "node",
+                  "height": 0.3807886552931952,
+                  "nodes": [
+                    {
+                      "type": "leaf",
+                      "height": 0,
+                      "data": [
+                        5.1,
+                        2.5,
+                        3.0,
+                        1.1
+                      ]
+                    },
+                    {
+                      "type": "node",
+                      "height": 0.1414213562373093,
+                      "nodes": [
+                        {
+                          "type": "leaf",
+                          "height": 0,
+                          "data": [
+                            4.9,
+                            2.4,
+                            3.3,
+                            1.0
+                          ]
+                        },
+                        {
+                          "type": "leaf",
+                          "height": 0,
+                          "data": [
+                            5.0,
+                            2.3,
+                            3.3,
+                            1.0
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "node",
+              "height": 1.1725800533927222,
+              "nodes": [
+                {
+                  "type": "leaf",
+                  "height": 0,
+                  "data": [
+                    4.9,
+                    2.5,
+                    4.5,
+                    1.7
+                  ]
+                },
+                {
+                  "type": "node",
+                  "height": 0.9888185859744872,
+                  "nodes": [
+                    {
+                      "type": "node",
+                      "height": 0.6969320524371698,
+                      "nodes": [
+                        {
+                          "type": "leaf",
+                          "height": 0,
+                          "data": [
+                            6.0,
+                            2.2,
+                            4.0,
+                            1.0
+                          ]
+                        },
+                        {
+                          "type": "node",
+                          "height": 0.6494190883817399,
+                          "nodes": [
+                            {
+                              "type": "node",
+                              "height": 0.1999999999999993,
+                              "nodes": [
+                                {
+                                  "type": "leaf",
+                                  "height": 0,
+                                  "data": [
+                                    5.6,
+                                    3.0,
+                                    4.5,
+                                    1.5
+                                  ]
+                                },
+                                {
+                                  "type": "leaf",
+                                  "height": 0,
+                                  "data": [
+                                    5.4,
+                                    3.0,
+                                    4.5,
+                                    1.5
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "node",
+                              "height": 0.5009739996717475,
+                              "nodes": [
+                                {
+                                  "type": "node",
+                                  "height": 0.4077989700820735,
+                                  "nodes": [
+                                    {
+                                      "type": "leaf",
+                                      "height": 0,
+                                      "data": [
+                                        5.9,
+                                        3.0,
+                                        4.2,
+                                        1.5
+                                      ]
+                                    },
+                                    {
+                                      "type": "node",
+                                      "height": 0.38181310873253216,
+                                      "nodes": [
+                                        {
+                                          "type": "node",
+                                          "height": 0.3162277660168378,
+                                          "nodes": [
+                                            {
+                                              "type": "leaf",
+                                              "height": 0,
+                                              "data": [
+                                                5.7,
+                                                2.8,
+                                                4.5,
+                                                1.3
+                                              ]
+                                            },
+                                            {
+                                              "type": "leaf",
+                                              "height": 0,
+                                              "data": [
+                                                5.5,
+                                                2.6,
+                                                4.4,
+                                                1.2
+                                              ]
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "type": "node",
+                                          "height": 0.33499585403736293,
+                                          "nodes": [
+                                            {
+                                              "type": "node",
+                                              "height": 0.22047927592204933,
+                                              "nodes": [
+                                                {
+                                                  "type": "node",
+                                                  "height": 0.1581138830084196,
+                                                  "nodes": [
+                                                    {
+                                                      "type": "leaf",
+                                                      "height": 0,
+                                                      "data": [
+                                                        5.6,
+                                                        3.0,
+                                                        4.1,
+                                                        1.3
+                                                      ]
+                                                    },
+                                                    {
+                                                      "type": "node",
+                                                      "height": 0.14142135623730964,
+                                                      "nodes": [
+                                                        {
+                                                          "type": "leaf",
+                                                          "height": 0,
+                                                          "data": [
+                                                            5.7,
+                                                            3.0,
+                                                            4.2,
+                                                            1.2
+                                                          ]
+                                                        },
+                                                        {
+                                                          "type": "leaf",
+                                                          "height": 0,
+                                                          "data": [
+                                                            5.7,
+                                                            2.9,
+                                                            4.2,
+                                                            1.3
+                                                          ]
+                                                        }
+                                                      ]
+                                                    }
+                                                  ]
+                                                },
+                                                {
+                                                  "type": "node",
+                                                  "height": 0.17320508075688815,
+                                                  "nodes": [
+                                                    {
+                                                      "type": "leaf",
+                                                      "height": 0,
+                                                      "data": [
+                                                        5.6,
+                                                        2.7,
+                                                        4.2,
+                                                        1.3
+                                                      ]
+                                                    },
+                                                    {
+                                                      "type": "leaf",
+                                                      "height": 0,
+                                                      "data": [
+                                                        5.7,
+                                                        2.8,
+                                                        4.1,
+                                                        1.3
+                                                      ]
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            },
+                                            {
+                                              "type": "node",
+                                              "height": 0.25495097567963887,
+                                              "nodes": [
+                                                {
+                                                  "type": "leaf",
+                                                  "height": 0,
+                                                  "data": [
+                                                    5.8,
+                                                    2.7,
+                                                    4.1,
+                                                    1.0
+                                                  ]
+                                                },
+                                                {
+                                                  "type": "node",
+                                                  "height": 0.14142135623730964,
+                                                  "nodes": [
+                                                    {
+                                                      "type": "leaf",
+                                                      "height": 0,
+                                                      "data": [
+                                                        5.8,
+                                                        2.7,
+                                                        3.9,
+                                                        1.2
+                                                      ]
+                                                    },
+                                                    {
+                                                      "type": "leaf",
+                                                      "height": 0,
+                                                      "data": [
+                                                        5.8,
+                                                        2.6,
+                                                        4.0,
+                                                        1.2
+                                                      ]
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "node",
+                                  "height": 0.48381983491074537,
+                                  "nodes": [
+                                    {
+                                      "type": "leaf",
+                                      "height": 0,
+                                      "data": [
+                                        5.2,
+                                        2.7,
+                                        3.9,
+                                        1.4
+                                      ]
+                                    },
+                                    {
+                                      "type": "node",
+                                      "height": 0.48456165758342845,
+                                      "nodes": [
+                                        {
+                                          "type": "node",
+                                          "height": 0.3109126351029604,
+                                          "nodes": [
+                                            {
+                                              "type": "node",
+                                              "height": 0.20000000000000018,
+                                              "nodes": [
+                                                {
+                                                  "type": "leaf",
+                                                  "height": 0,
+                                                  "data": [
+                                                    5.5,
+                                                    2.3,
+                                                    4.0,
+                                                    1.3
+                                                  ]
+                                                },
+                                                {
+                                                  "type": "leaf",
+                                                  "height": 0,
+                                                  "data": [
+                                                    5.5,
+                                                    2.5,
+                                                    4.0,
+                                                    1.3
+                                                  ]
+                                                }
+                                              ]
+                                            },
+                                            {
+                                              "type": "node",
+                                              "height": 0.2121320343559641,
+                                              "nodes": [
+                                                {
+                                                  "type": "leaf",
+                                                  "height": 0,
+                                                  "data": [
+                                                    5.6,
+                                                    2.5,
+                                                    3.9,
+                                                    1.1
+                                                  ]
+                                                },
+                                                {
+                                                  "type": "node",
+                                                  "height": 0.1414213562373093,
+                                                  "nodes": [
+                                                    {
+                                                      "type": "leaf",
+                                                      "height": 0,
+                                                      "data": [
+                                                        5.5,
+                                                        2.4,
+                                                        3.8,
+                                                        1.1
+                                                      ]
+                                                    },
+                                                    {
+                                                      "type": "leaf",
+                                                      "height": 0,
+                                                      "data": [
+                                                        5.5,
+                                                        2.4,
+                                                        3.7,
+                                                        1.0
+                                                      ]
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "type": "node",
+                                          "height": 0.44721359549995804,
+                                          "nodes": [
+                                            {
+                                              "type": "leaf",
+                                              "height": 0,
+                                              "data": [
+                                                5.6,
+                                                2.9,
+                                                3.6,
+                                                1.3
+                                              ]
+                                            },
+                                            {
+                                              "type": "leaf",
+                                              "height": 0,
+                                              "data": [
+                                                5.7,
+                                                2.6,
+                                                3.5,
+                                                1.0
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "type": "node",
+                      "height": 0.7087184311746509,
+                      "nodes": [
+                        {
+                          "type": "node",
+                          "height": 0.6144102863722253,
+                          "nodes": [
+                            {
+                              "type": "leaf",
+                              "height": 0,
+                              "data": [
+                                6.0,
+                                2.2,
+                                5.0,
+                                1.5
+                              ]
+                            },
+                            {
+                              "type": "node",
+                              "height": 0.26457513110645864,
+                              "nodes": [
+                                {
+                                  "type": "leaf",
+                                  "height": 0,
+                                  "data": [
+                                    6.2,
+                                    2.2,
+                                    4.5,
+                                    1.5
+                                  ]
+                                },
+                                {
+                                  "type": "leaf",
+                                  "height": 0,
+                                  "data": [
+                                    6.3,
+                                    2.3,
+                                    4.4,
+                                    1.3
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        },
+                        {
+                          "type": "node",
+                          "height": 0.7470809100216692,
+                          "nodes": [
+                            {
+                              "type": "node",
+                              "height": 0.5221110992882645,
+                              "nodes": [
+                                {
+                                  "type": "node",
+                                  "height": 0.4789311015167003,
+                                  "nodes": [
+                                    {
+                                      "type": "leaf",
+                                      "height": 0,
+                                      "data": [
+                                        5.8,
+                                        2.8,
+                                        5.1,
+                                        2.4
+                                      ]
+                                    },
+                                    {
+                                      "type": "node",
+                                      "height": 0.29627314724385273,
+                                      "nodes": [
+                                        {
+                                          "type": "leaf",
+                                          "height": 0,
+                                          "data": [
+                                            5.6,
+                                            2.8,
+                                            4.9,
+                                            2.0
+                                          ]
+                                        },
+                                        {
+                                          "type": "node",
+                                          "height": 0.13228756555322949,
+                                          "nodes": [
+                                            {
+                                              "type": "leaf",
+                                              "height": 0,
+                                              "data": [
+                                                5.8,
+                                                2.7,
+                                                5.1,
+                                                1.9
+                                              ]
+                                            },
+                                            {
+                                              "type": "node",
+                                              "height": 0.26457513110645897,
+                                              "nodes": [
+                                                {
+                                                  "type": "leaf",
+                                                  "height": 0,
+                                                  "data": [
+                                                    5.8,
+                                                    2.7,
+                                                    5.1,
+                                                    1.9
+                                                  ]
+                                                },
+                                                {
+                                                  "type": "leaf",
+                                                  "height": 0,
+                                                  "data": [
+                                                    5.7,
+                                                    2.5,
+                                                    5.0,
+                                                    2.0
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "node",
+                                  "height": 0.48138977046787274,
+                                  "nodes": [
+                                    {
+                                      "type": "node",
+                                      "height": 0.2924988129130705,
+                                      "nodes": [
+                                        {
+                                          "type": "leaf",
+                                          "height": 0,
+                                          "data": [
+                                            5.9,
+                                            3.0,
+                                            5.1,
+                                            1.8
+                                          ]
+                                        },
+                                        {
+                                          "type": "node",
+                                          "height": 0.25495097567963904,
+                                          "nodes": [
+                                            {
+                                              "type": "leaf",
+                                              "height": 0,
+                                              "data": [
+                                                5.9,
+                                                3.2,
+                                                4.8,
+                                                1.8
+                                              ]
+                                            },
+                                            {
+                                              "type": "node",
+                                              "height": 0.14142135623730964,
+                                              "nodes": [
+                                                {
+                                                  "type": "leaf",
+                                                  "height": 0,
+                                                  "data": [
+                                                    6.1,
+                                                    3.0,
+                                                    4.9,
+                                                    1.8
+                                                  ]
+                                                },
+                                                {
+                                                  "type": "leaf",
+                                                  "height": 0,
+                                                  "data": [
+                                                    6.0,
+                                                    3.0,
+                                                    4.8,
+                                                    1.8
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "node",
+                                      "height": 0.33499585403736315,
+                                      "nodes": [
+                                        {
+                                          "type": "node",
+                                          "height": 0.31224989991992,
+                                          "nodes": [
+                                            {
+                                              "type": "leaf",
+                                              "height": 0,
+                                              "data": [
+                                                6.3,
+                                                2.5,
+                                                5.0,
+                                                1.9
+                                              ]
+                                            },
+                                            {
+                                              "type": "node",
+                                              "height": 0.17320508075688762,
+                                              "nodes": [
+                                                {
+                                                  "type": "leaf",
+                                                  "height": 0,
+                                                  "data": [
+                                                    6.3,
+                                                    2.7,
+                                                    4.9,
+                                                    1.8
+                                                  ]
+                                                },
+                                                {
+                                                  "type": "leaf",
+                                                  "height": 0,
+                                                  "data": [
+                                                    6.2,
+                                                    2.8,
+                                                    4.8,
+                                                    1.8
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "type": "node",
+                                          "height": 0.3570714214271419,
+                                          "nodes": [
+                                            {
+                                              "type": "leaf",
+                                              "height": 0,
+                                              "data": [
+                                                6.3,
+                                                2.5,
+                                                4.9,
+                                                1.5
+                                              ]
+                                            },
+                                            {
+                                              "type": "node",
+                                              "height": 0.33166247903553975,
+                                              "nodes": [
+                                                {
+                                                  "type": "leaf",
+                                                  "height": 0,
+                                                  "data": [
+                                                    6.0,
+                                                    2.7,
+                                                    5.1,
+                                                    1.6
+                                                  ]
+                                                },
+                                                {
+                                                  "type": "leaf",
+                                                  "height": 0,
+                                                  "data": [
+                                                    6.3,
+                                                    2.8,
+                                                    5.1,
+                                                    1.5
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            },
+                            {
+                              "type": "node",
+                              "height": 0.5884222469797876,
+                              "nodes": [
+                                {
+                                  "type": "node",
+                                  "height": 0.4109744517606911,
+                                  "nodes": [
+                                    {
+                                      "type": "node",
+                                      "height": 0.2999999999999998,
+                                      "nodes": [
+                                        {
+                                          "type": "node",
+                                          "height": 0.14142135623730995,
+                                          "nodes": [
+                                            {
+                                              "type": "leaf",
+                                              "height": 0,
+                                              "data": [
+                                                6.7,
+                                                3.1,
+                                                4.4,
+                                                1.4
+                                              ]
+                                            },
+                                            {
+                                              "type": "leaf",
+                                              "height": 0,
+                                              "data": [
+                                                6.6,
+                                                3.0,
+                                                4.4,
+                                                1.4
+                                              ]
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "type": "node",
+                                          "height": 0.24494897427831766,
+                                          "nodes": [
+                                            {
+                                              "type": "leaf",
+                                              "height": 0,
+                                              "data": [
+                                                6.5,
+                                                2.8,
+                                                4.6,
+                                                1.5
+                                              ]
+                                            },
+                                            {
+                                              "type": "leaf",
+                                              "height": 0,
+                                              "data": [
+                                                6.6,
+                                                2.9,
+                                                4.6,
+                                                1.3
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "node",
+                                      "height": 0.37165171868296243,
+                                      "nodes": [
+                                        {
+                                          "type": "leaf",
+                                          "height": 0,
+                                          "data": [
+                                            6.7,
+                                            3.0,
+                                            5.0,
+                                            1.7
+                                          ]
+                                        },
+                                        {
+                                          "type": "node",
+                                          "height": 0.3480102169636853,
+                                          "nodes": [
+                                            {
+                                              "type": "leaf",
+                                              "height": 0,
+                                              "data": [
+                                                6.8,
+                                                2.8,
+                                                4.8,
+                                                1.4
+                                              ]
+                                            },
+                                            {
+                                              "type": "node",
+                                              "height": 0.27838821814150133,
+                                              "nodes": [
+                                                {
+                                                  "type": "leaf",
+                                                  "height": 0,
+                                                  "data": [
+                                                    6.7,
+                                                    3.1,
+                                                    4.7,
+                                                    1.5
+                                                  ]
+                                                },
+                                                {
+                                                  "type": "node",
+                                                  "height": 0.26457513110645914,
+                                                  "nodes": [
+                                                    {
+                                                      "type": "leaf",
+                                                      "height": 0,
+                                                      "data": [
+                                                        7.0,
+                                                        3.2,
+                                                        4.7,
+                                                        1.4
+                                                      ]
+                                                    },
+                                                    {
+                                                      "type": "leaf",
+                                                      "height": 0,
+                                                      "data": [
+                                                        6.9,
+                                                        3.1,
+                                                        4.9,
+                                                        1.5
+                                                      ]
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                },
+                                {
+                                  "type": "node",
+                                  "height": 0.49521520093601257,
+                                  "nodes": [
+                                    {
+                                      "type": "node",
+                                      "height": 0.39686269665968815,
+                                      "nodes": [
+                                        {
+                                          "type": "leaf",
+                                          "height": 0,
+                                          "data": [
+                                            6.0,
+                                            3.4,
+                                            4.5,
+                                            1.6
+                                          ]
+                                        },
+                                        {
+                                          "type": "node",
+                                          "height": 0.2645751311064593,
+                                          "nodes": [
+                                            {
+                                              "type": "leaf",
+                                              "height": 0,
+                                              "data": [
+                                                6.4,
+                                                3.2,
+                                                4.5,
+                                                1.5
+                                              ]
+                                            },
+                                            {
+                                              "type": "leaf",
+                                              "height": 0,
+                                              "data": [
+                                                6.3,
+                                                3.3,
+                                                4.7,
+                                                1.6
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    },
+                                    {
+                                      "type": "node",
+                                      "height": 0.4609018936341615,
+                                      "nodes": [
+                                        {
+                                          "type": "node",
+                                          "height": 0.288675134594813,
+                                          "nodes": [
+                                            {
+                                              "type": "leaf",
+                                              "height": 0,
+                                              "data": [
+                                                6.1,
+                                                2.8,
+                                                4.7,
+                                                1.2
+                                              ]
+                                            },
+                                            {
+                                              "type": "node",
+                                              "height": 0.21213203435596442,
+                                              "nodes": [
+                                                {
+                                                  "type": "leaf",
+                                                  "height": 0,
+                                                  "data": [
+                                                    6.0,
+                                                    2.9,
+                                                    4.5,
+                                                    1.5
+                                                  ]
+                                                },
+                                                {
+                                                  "type": "node",
+                                                  "height": 0.14142135623730995,
+                                                  "nodes": [
+                                                    {
+                                                      "type": "leaf",
+                                                      "height": 0,
+                                                      "data": [
+                                                        6.1,
+                                                        2.9,
+                                                        4.7,
+                                                        1.4
+                                                      ]
+                                                    },
+                                                    {
+                                                      "type": "leaf",
+                                                      "height": 0,
+                                                      "data": [
+                                                        6.1,
+                                                        3.0,
+                                                        4.6,
+                                                        1.4
+                                                      ]
+                                                    }
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        },
+                                        {
+                                          "type": "node",
+                                          "height": 0.3741657386773946,
+                                          "nodes": [
+                                            {
+                                              "type": "leaf",
+                                              "height": 0,
+                                              "data": [
+                                                6.1,
+                                                2.8,
+                                                4.0,
+                                                1.3
+                                              ]
+                                            },
+                                            {
+                                              "type": "node",
+                                              "height": 0.20000000000000018,
+                                              "nodes": [
+                                                {
+                                                  "type": "leaf",
+                                                  "height": 0,
+                                                  "data": [
+                                                    6.4,
+                                                    2.9,
+                                                    4.3,
+                                                    1.3
+                                                  ]
+                                                },
+                                                {
+                                                  "type": "leaf",
+                                                  "height": 0,
+                                                  "data": [
+                                                    6.2,
+                                                    2.9,
+                                                    4.3,
+                                                    1.3
+                                                  ]
+                                                }
+                                              ]
+                                            }
+                                          ]
+                                        }
+                                      ]
+                                    }
+                                  ]
+                                }
+                              ]
+                            }
+                          ]
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

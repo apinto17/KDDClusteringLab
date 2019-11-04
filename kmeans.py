@@ -29,7 +29,6 @@ class KMeans:
         for ci, cv in enumerate(clusters):
             for i in cv:
                 plt.scatter(i.values[0], i.values[1], color=my_color[ci])
-                print(i)
 
         plt.show()
 
