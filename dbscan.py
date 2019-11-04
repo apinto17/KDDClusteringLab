@@ -74,7 +74,7 @@ def main():
     else:
         filename = sys.argv[1]
     data = pd.read_csv(filename)
-    data = data.iloc[:, :-1]
+    data = data.iloc[:, 1:]
 
     # comment out if you don't want 2d data
     #---------------------------------------------------
