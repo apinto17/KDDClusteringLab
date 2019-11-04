@@ -1,0 +1,67 @@
+Cluster: 0
+Centroids: [33.16666667 17.27777778]
+Max Dist. to Center: 12.124101
+Min Dist. to Center: 2.283867
+Avg Dist. to Center: 7.579450
+18 Points:
+[32,27]
+[26,25]
+[39,24]
+[34,23]
+[37,23]
+[22,22]
+[38,21]
+[35,20]
+[31,18]
+[26,16]
+[31,13]
+[26,16]
+[38,13]
+[29,11]
+[34,11]
+[37,10]
+[40, 9]
+[42, 9]
+End cluster 0
+Cluster: 1
+Centroids: [22. 38.]
+Max Dist. to Center: 3.000000
+Min Dist. to Center: 3.000000
+Avg Dist. to Center: 3.000000
+2 Points:
+[19,38]
+[25,38]
+End cluster 1
+Cluster: 2
+Centroids: [41.11111111 41.77777778]
+Max Dist. to Center: 4.275974
+Min Dist. to Center: 0.785674
+Avg Dist. to Center: 2.911701
+9 Points:
+[41,45]
+[39,44]
+[42,43]
+[44,43]
+[38,42]
+[41,41]
+[45,40]
+[38,39]
+[42,39]
+End cluster 2
+Cluster: 3
+Centroids: [ 9.9 37.8]
+Max Dist. to Center: 4.341659
+Min Dist. to Center: 0.921954
+Avg Dist. to Center: 3.429930
+10 Points:
+[10,42]
+[ 8,41]
+[13,40]
+[ 7,39]
+[ 9,38]
+[12,38]
+[ 6,37]
+[13,35]
+[ 9,34]
+[12,34]
+End cluster 3
