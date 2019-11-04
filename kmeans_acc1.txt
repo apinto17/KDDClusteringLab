@@ -1,0 +1,40 @@
+Cluster: 0
+Centroids: [ 2. 19.  2.]
+Max Dist. to Center: 0.000000
+Min Dist. to Center: 0.000000
+Avg Dist. to Center: 0.000000
+1 Points:
+[ 2,19, 2]
+End cluster 0
+Cluster: 1
+Centroids: [2.    3.125 2.   ]
+Max Dist. to Center: 2.741464
+Min Dist. to Center: 0.875000
+Avg Dist. to Center: 1.646746
+8 Points:
+[2,1,1]
+[2,2,2]
+[2,2,2]
+[2,2,1]
+[2,4,2]
+[2,4,1]
+[2,5,3]
+[2,5,4]
+End cluster 1
+Cluster: 2
+Centroids: [ 5.  10.3  1. ]
+Max Dist. to Center: 4.700000
+Min Dist. to Center: 0.300000
+Avg Dist. to Center: 2.160000
+10 Points:
+[ 5,15, 1]
+[ 5,14, 1]
+[ 5,12, 1]
+[ 5,11, 1]
+[ 5,10, 1]
+[5,9,1]
+[5,9,1]
+[5,8,1]
+[5,8,1]
+[5,7,1]
+End cluster 2

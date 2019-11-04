@@ -9,10 +9,9 @@ from sklearn.preprocessing import StandardScaler
 import matplotlib.cm as cm
 
 class KMeans:
-    def __init__ (self, cluster_th=2, centroid_th=0.2, sse_th=0.2):
-        self.cluster_th = cluster_th
-        self.centroid_th = centroid_th
-        self.sse_th = sse_th
+    def __init__ (self, stoppage=2, threshold=1):
+        self.stoppage = stoppage
+        self.threshold = threshold
         self.prev_sse = 0
 
     def init_centroids(self, centroids):
@@ -89,7 +88,7 @@ class KMeans:
             print("Centroids: ", end='')
             print(self.centroids[i].values)
             cluster_points = pd.DataFrame(self.clusters[i])
-            dist_vec = self.calc_distance(cluster_points, self.centroids[i])
+            dist_vec = self.calc_distance(cluster_points.values, self.centroids[i].values)
 
             print("Max Dist. to Center: %f" % (np.max(dist_vec)))
             print("Min Dist. to Center: %f" % (np.min(dist_vec)))
@@ -175,9 +174,12 @@ class KMeans:
         return True
 
     def done(self, clusters, centroids):
-        return self.check_reasignments(clusters, self.cluster_th) \
-            or self.centroids_changed(centroids, self.centroid_th) \
-            or self.stoppage_sse(clusters, centroids, self.sse_th)
+        if self.stoppage == 0:
+            return self.check_reasignments(clusters, self.threshold)
+        elif self.stoppage ==1:
+            return self.centroids_changed(centroids, self.threshold)
+        else:
+            return self.stoppage_sse(clusters, centroids, self.threshold)
 
     #find the centroid of the complete dataset
     def find_dataset_centroid(self, data):
@@ -204,11 +206,12 @@ class KMeans:
 def main():
     filename = None
     kmeans = None
+    stoppage = 2
     if(len(sys.argv) < 3):
-        print("Usage: python kmeans.py <filename> <k> [<min_pt_reasignment> <min_centroid_change> <sse_threshold>]")
+        print("Usage: python kmeans.py <filename> <k> [<stoppage> <threshold>]")
         exit()
-    elif(len(sys.argv) == 6):
-        kmeans = KMeans(int(sys.argv[3]), float(sys.argv[4]), float(sys.argv[5]))
+    elif(len(sys.argv) == 5):
+        kmeans = KMeans(int(sys.argv[3]), float(sys.argv[4]))
     else:
         kmeans = KMeans()
     

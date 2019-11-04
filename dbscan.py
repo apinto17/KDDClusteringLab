@@ -109,12 +109,13 @@ class Density:
 
 def main():
     filename = None
-    if(len(sys.argv) < 4):
-        print("Usage: python kmeans.py <filename> <epsilon> <numPoints>")
+    if(len(sys.argv) < 5):
+        print("Usage: python kmeans.py <filename> <epsilon> <numPoints> <distance[euclidean|chebyshev|cityblock]>")
         exit()
     
     density = Density(float(sys.argv[2]),int(sys.argv[3]))
     filename = sys.argv[1]
+    distance = sys.argv[4]
     data = pd.read_csv(filename)
     data.drop(list(data.filter(regex = '0')), axis = 1, inplace = True)
 
@@ -126,7 +127,7 @@ def main():
 #    circles = datasets.make_circles(n_samples=1000, factor=.5, noise=.05)
 #    data = pd.DataFrame(circles[0])
     #--------------------------------------------------
-    point_types = density.calc_clusters(data, 'euclidean')
+    point_types = density.calc_clusters(data, distance)
 
     density.output_data(data, point_types)
     density.plot_pca(data,point_types)
